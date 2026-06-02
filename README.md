@@ -1,23 +1,25 @@
 # Fredrick Mandela GitHub Pages Profile
 
-A lightweight GitHub Pages landing page for Fredrick Mandela, focused on data platforms, backend systems, full-stack applications, analytics engineering, and data quality.
+This is a simple GitHub Pages profile site for me — Fredrick Mandela.
 
-This page is intentionally separate from the full Next.js portfolio. It works as a simple, fast, static professional identity page that can be hosted directly through GitHub Pages and linked from GitHub, LinkedIn, resumes, and other public profiles.
+I created it as a lightweight public landing page that can sit alongside my main portfolio site. The full portfolio has more detail, case studies, resume positioning, and project writeups. This page is intentionally smaller: it gives a quick summary of who I am, what I work on, and where to find me.
 
-## Purpose
+## What this page is for
 
-This repository provides a standalone `index.html` page that helps make Fredrick Mandela’s professional profile easier to discover and cross-reference across search engines, AI systems, recruiters, and technical audiences.
+The goal of this page is to make my professional profile easier to find and connect across public platforms like GitHub, LinkedIn, search engines, and AI tools.
 
-The page is designed to support identity and entity clarity for:
+My work sits across:
 
-- Fredrick Mandela
-- Senior Data & Full-Stack Engineer
-- Data platforms
+- Data engineering
+- Full-stack engineering
 - Backend systems
-- Full-stack applications
+- Data platforms
 - Analytics engineering
+- APIs and integrations
+- Cloud deployments
 - Data quality and observability
-- Nairobi, Kenya
+
+My recent professional work has focused heavily on data engineering and data platforms, but my broader experience includes backend and full-stack software engineering as well.
 
 ## What is included
 
@@ -26,18 +28,18 @@ index.html
 README.md
 ```
 
-The `index.html` file includes:
+The `index.html` file is a standalone static page. It includes:
 
-- Responsive single-page layout
-- Professional profile summary
-- About section
-- Skills and focus areas
+- A short profile introduction
+- A clear “About Fredrick Mandela” section
+- Focus areas and technical strengths
 - Selected case study themes
 - Contact links
-- SEO metadata
-- Open Graph metadata
-- Twitter card metadata
-- JSON-LD `Person` structured data
+- Basic SEO metadata
+- Open Graph metadata for link previews
+- JSON-LD structured data to help search engines understand the page
+
+There is no framework or build step required. It is just HTML, CSS, and a small amount of JavaScript.
 
 ## Before publishing
 
@@ -49,7 +51,7 @@ YOUR_GITHUB_USERNAME
 
 with your actual GitHub username.
 
-You should update these values in the HTML:
+The main places to check are:
 
 ```html
 <link rel="canonical" href="https://YOUR_GITHUB_USERNAME.github.io/" />
@@ -59,68 +61,68 @@ You should update these values in the HTML:
 "https://github.com/YOUR_GITHUB_USERNAME"
 ```
 
-Also confirm that the full portfolio link is correct:
+Also confirm that the link to the full portfolio is correct:
 
 ```text
 https://fredrickmandela.netlify.app
 ```
 
-If the Netlify portfolio domain changes later, update the link here too.
+If I later move the main portfolio to a custom domain, I should update the link here too.
 
-## Recommended GitHub Pages setup
+## How to publish on GitHub Pages
 
-### Option 1: User site
+### Option 1: Personal GitHub Pages site
 
-For a personal GitHub Pages profile site, create a repository named:
+Create a repository named:
 
 ```text
 YOUR_GITHUB_USERNAME.github.io
 ```
 
-Then place the files at the repository root:
+Then add these files to the root of the repository:
 
 ```text
 index.html
 README.md
 ```
 
-GitHub Pages will serve the site at:
+Once GitHub Pages is enabled, the site will be available at:
 
 ```text
 https://YOUR_GITHUB_USERNAME.github.io/
 ```
 
-### Option 2: Project site
+### Option 2: Project GitHub Pages site
 
-For a project-specific site, place the files in any repository and enable GitHub Pages from the repository settings.
+This can also live inside any normal GitHub repository.
 
-The site will usually be served at:
+In that case, GitHub will usually publish it at:
 
 ```text
 https://YOUR_GITHUB_USERNAME.github.io/REPOSITORY_NAME/
 ```
 
-If using a project site, update the canonical URL and structured data to match the final GitHub Pages URL.
+If using this option, remember to update the canonical URL and structured data inside `index.html` so they point to the actual published page.
 
-## How to deploy
+## Deployment steps
 
-1. Create or open the GitHub repository.
-2. Add `index.html` and `README.md`.
-3. Commit and push the files.
-4. Go to repository **Settings**.
+1. Add `index.html` and `README.md` to the repository.
+2. Commit and push the changes.
+3. Open the repository on GitHub.
+4. Go to **Settings**.
 5. Open **Pages**.
 6. Under **Build and deployment**, choose:
    - Source: `Deploy from a branch`
    - Branch: `main`
    - Folder: `/root`
-7. Save.
+7. Save the settings.
 8. Wait for GitHub Pages to publish the site.
 
 ## Local preview
 
-Because this is a static HTML page, you can open it directly in your browser.
+Because this is a static HTML page, I can open `index.html` directly in a browser.
 
-Or run a simple local server:
+Alternatively, I can run a small local server:
 
 ```bash
 python3 -m http.server 8000
@@ -132,68 +134,70 @@ Then open:
 http://localhost:8000
 ```
 
-## Entity SEO notes
+## Why the page includes structured data
 
-The page includes JSON-LD structured data using Schema.org `Person` markup.
+The page includes Schema.org `Person` structured data.
 
-The structured data helps establish clear relationships between:
+This helps make the identity of the page clearer to search engines and other systems. In simple terms, it helps connect:
 
 ```text
-Fredrick Mandela → Senior Data & Full-Stack Engineer
-Fredrick Mandela → Nairobi, Kenya
-Fredrick Mandela → LinkedIn profile
-Fredrick Mandela → GitHub profile
-Fredrick Mandela → data platforms
-Fredrick Mandela → backend systems
-Fredrick Mandela → full-stack applications
-Fredrick Mandela → One Acre Fund affiliation
+Fredrick Mandela
+→ Senior Data & Full-Stack Engineer
+→ Nairobi, Kenya
+→ LinkedIn profile
+→ GitHub profile
+→ data platforms
+→ backend systems
+→ full-stack applications
+→ One Acre Fund affiliation
 ```
 
-The most important field is `sameAs`, which links the GitHub Pages profile to verified public profiles such as LinkedIn and GitHub.
+The `sameAs` field is especially useful because it points to other profiles that represent the same person, such as LinkedIn and GitHub.
 
-## Recommended external links to update
+## Links to keep updated
 
-After the GitHub Pages site is published, add the final URL to:
+After publishing the GitHub Pages site, I should add the final URL to:
 
-- LinkedIn profile
+- LinkedIn
 - GitHub profile bio
-- Full Next.js portfolio
-- Resume PDF
+- My main portfolio site
+- My resume PDF
 - Email signature
 - Job application profiles
-- Any public technical profiles
 
-Use the same name consistently:
+I should keep the naming consistent across these places:
 
 ```text
 Fredrick Mandela
 ```
 
-And use a consistent role phrase:
+And use a consistent professional positioning, such as:
 
 ```text
 Senior Data & Full-Stack Engineer
 ```
 
-This consistency helps search engines and AI systems connect the same professional identity across different public pages.
+## Relationship with the main portfolio
 
-## Relationship with the full portfolio
+This GitHub Pages site is the lightweight version.
 
-This GitHub Pages page is a lightweight landing page.
-
-The main portfolio remains the richer site hosted on Netlify:
+The main portfolio is hosted separately on Netlify:
 
 ```text
 https://fredrickmandela.netlify.app
 ```
 
-Use GitHub Pages as a secondary public identity anchor and the Netlify portfolio as the full professional profile with detailed case studies, resume, skills, and contact information.
+That site has more detail, including experience, case studies, skills, resume positioning, and contact information.
 
-## Suggested future improvements
+This GitHub Pages page is mainly a quick public identity anchor — useful for GitHub, search, and simple sharing.
 
-- Add an Open Graph image for richer link previews.
+## Future improvements
+
+Some possible improvements later:
+
+- Add an Open Graph image for better link previews.
 - Add a downloadable resume link.
-- Add a custom domain if needed.
-- Add a small `robots.txt` file if using a custom setup.
-- Keep the profile wording aligned with LinkedIn and the full portfolio.
-- Update the page when the primary portfolio domain changes.
+- Add a custom domain.
+- Add a small `robots.txt` file.
+- Keep the language aligned with LinkedIn and the main portfolio.
+- Update the page if the main portfolio URL changes.
