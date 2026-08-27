@@ -4,7 +4,8 @@ import { ArrowRight } from "lucide-react";
 import { CaseStudyCard } from "@/components/CaseStudyCard";
 import { ImpactStats } from "@/components/ImpactStats";
 import { SectionHeader } from "@/components/SectionHeader";
-import { caseStudies, profile } from "@/lib/profile";
+import { ProjectCard } from "@/components/ProjectCard";
+import { caseStudies, profile, projects } from "@/lib/profile";
 
 export default function HomePage() {
 	const personJsonLd = {
@@ -36,7 +37,7 @@ export default function HomePage() {
 		name: "Fredrick Mandela Portfolio",
 		url: profile.website,
 		description:
-			"Portfolio website for Fredrick Mandela, covering data platforms, backend systems, full-stack applications, analytics engineering, and data quality.",
+			"Portfolio website for Fredrick Mandela, covering data platforms, backend systems, analytics products, full-stack applications, and technical leadership.",
 		publisher: {
 			"@id": `${profile.website}/#person`,
 		},
@@ -52,7 +53,7 @@ export default function HomePage() {
 			<section className="mx-auto grid max-w-6xl items-center gap-12 px-6 py-20 md:grid-cols-[1.15fr_0.85fr] md:py-28">
 				<div className="max-w-4xl">
 					<p className="mb-4 text-sm font-semibold uppercase tracking-wider text-blue-600">
-						Data Engineering · Analytics Engineering · Backend Systems
+						Data Platforms · Backend Systems · Full-Stack Applications
 					</p>
 
 					<h1 className="text-5xl font-bold tracking-tight md:text-4xl">
@@ -93,13 +94,14 @@ export default function HomePage() {
 							alt="Fredrick Mandela"
 							fill
 							priority
+							sizes="(min-width: 768px) 384px, 100vw"
 							className="object-cover"
 						/>
 					</div>
 
 					<div className="absolute -bottom-6 left-1/2 w-[88%] -translate-x-1/2 rounded-2xl border border-border bg-white/90 p-4 shadow-lg backdrop-blur">
 						<p className="text-sm font-semibold text-slate-950">
-							Data platform leader based in Nairobi, Kenya
+							Senior data and full-stack engineer based in Nairobi, Kenya
 						</p>
 						<p className="mt-1 text-sm text-slate-600">
 							Snowflake · Airflow · dbt · Python · SQL · APIs
@@ -110,6 +112,29 @@ export default function HomePage() {
 
 			<section className="mx-auto max-w-6xl px-6 pb-16">
 				<ImpactStats />
+			</section>
+
+			<section className="mx-auto max-w-6xl px-6 py-16">
+				<SectionHeader
+					eyebrow="Projects"
+					title="Products built from practical problems"
+					description="Selected work across financial data, analytics engineering, backend systems, full-stack development, and applied AI."
+				/>
+
+				<div className="grid gap-5 md:grid-cols-2">
+					{projects.slice(0, 2).map((project) => (
+						<ProjectCard key={project.title} {...project} />
+					))}
+				</div>
+
+				<div className="mt-6">
+					<Link
+						href="/projects"
+						className="inline-flex items-center font-semibold text-blue-700 hover:text-blue-900"
+					>
+						View all projects <ArrowRight className="ml-2 h-4 w-4" />
+					</Link>
+				</div>
 			</section>
 
 			<section className="mx-auto max-w-6xl px-6 py-16">
@@ -131,9 +156,9 @@ export default function HomePage() {
 
 				<div className="grid gap-5 md:grid-cols-3">
 					{[
-						"Reliable data platforms",
-						"Trusted analytics layers",
-						"Backend and API delivery",
+						"Dependable data platforms",
+						"Decision-ready analytics products",
+						"Backend services and integrations",
 						"Data quality and governance",
 						"Technical leadership",
 						"Stakeholder-aligned execution",

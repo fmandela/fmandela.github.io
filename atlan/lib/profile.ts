@@ -12,23 +12,23 @@ export const profile = {
 	title: "Senior Data & Full-Stack Engineer | Data Platforms | Backend Systems",
 
 	headline:
-		"Building reliable data platforms, backend systems, and full-stack applications for operational teams.",
+		"I build reliable data products and software for operational teams.",
 
 	intro:
-		"I’m Fredrick Mandela, a senior data and software engineering professional based in Nairobi, Kenya. My recent work has focused on data engineering and data platforms, but my broader experience spans full-stack development, backend systems, APIs, cloud deployments, analytics engineering, and data quality practices across multi-country operational environments.",
+		"I’m Fredrick Mandela, a senior data and full-stack engineer based in Nairobi, Kenya. I turn complex operational needs into dependable data platforms, backend services, analytics products, and applications. My experience spans hands-on engineering and technical leadership across multi-country environments.",
 
 	shortBio:
-		"Fredrick Mandela is a senior data and software engineering professional based in Nairobi, Kenya, with experience across data platforms, analytics engineering, backend systems, APIs, cloud deployments, and full-stack applications.",
+		"Fredrick Mandela is a senior data and full-stack engineer based in Nairobi, Kenya, building reliable data platforms, backend systems, analytics products, and production-ready applications.",
 
 	email: "fredricardomandela@gmail.com",
 	location: "Nairobi, Kenya",
 
-	website: "https://fredrickmandela.netlify.app", // replace if you add a custom domain
+	website: "https://fredrickmandela.netlify.app",
 	linkedin: "https://www.linkedin.com/in/fmandela",
-	github: "https://github.com/YOUR_GITHUB_USERNAME",
+	github: "https://github.com/fmandela",
 
 	currentPositioning:
-		"Senior Data & Full-Stack Engineer focused on data platforms, backend systems, analytics engineering, and production-ready applications.",
+		"Senior Data & Full-Stack Engineer working across data platforms, backend systems, analytics products, and production-ready applications.",
 
 	recentRole:
 		"Previously Data Engineering Manager / Lead Data Engineer at One Acre Fund",
@@ -43,6 +43,8 @@ export const profile = {
 		"Cloud Deployments",
 		"Data Quality",
 		"Pipeline Observability",
+		"Financial Data Engineering",
+		"Web Scraping",
 		"Snowflake",
 		"Airflow",
 		"dbt",
@@ -68,7 +70,49 @@ export const impactStats = [
 	{ label: "Leadership scope", value: "Team leadership" },
 	{ label: "Primary focus", value: "Data platforms" },
 	{ label: "Technical range", value: "Full-stack engineering" },
-	{ label: "Experience", value: "7+ years" },
+	{ label: "Experience", value: "8+ years" },
+];
+
+export const projects = [
+	{
+		title: "Investar Companion",
+		status: "Featured · In development",
+		description:
+			"A financial-data platform that collects Kenyan unit-trust rates from provider websites and documents, then standardizes them into auditable, analysis-ready records in Supabase.",
+		detail:
+			"It combines provider-specific scrapers with AI-assisted extraction, preserves source evidence and confidence, tracks rate history and freshness, and exposes an API-ready market snapshot for fund comparison, advisor tools, and automated publishing.",
+		tools: ["Python", "Playwright", "Supabase", "PostgreSQL", "AI extraction"],
+		github: "https://github.com/fmandela/investar-companion",
+	},
+	{
+		title: "AI SQL Analyst",
+		description:
+			"A local-first Streamlit analytics assistant that turns plain-English business questions into safe SQL, runs queries against sample data, and explains the results clearly.",
+		detail:
+			"The architecture is designed to extend to Snowflake or another production database.",
+		tools: ["Python", "Streamlit", "SQL", "Applied AI"],
+		demo: "https://ai-sql-analyst-demo.streamlit.app/",
+		github: "https://github.com/fmandela/ai-sql-analyst",
+	},
+	{
+		title: "AI Career Assistant",
+		description:
+			"A local-first Streamlit assistant that helps users create professional resumes and assess their fit for roles using job descriptions.",
+		detail:
+			"It has a future path to integrate with LinkedIn or other job platforms.",
+		tools: ["Python", "Streamlit", "Applied AI"],
+		demo: "https://resume-builder-ai-agent.streamlit.app/",
+		github: "https://github.com/fmandela/resume-builder-agent",
+	},
+	{
+		title: "Dairy Farm Records",
+		description:
+			"A full-stack farm management product for capturing animal records, milk production, feeding logs, health events, heat cycles, and insemination records from a Flutter Android application.",
+		detail:
+			"A FastAPI backend provides authenticated endpoints while the mobile app gives farmers a straightforward record-management workflow.",
+		tools: ["Flutter", "FastAPI", "Python", "REST APIs"],
+		demo: "https://farmer-app-backend-roq4.onrender.com/",
+	},
 ];
 
 export const caseStudies = [

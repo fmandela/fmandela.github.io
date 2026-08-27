@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/3e59dd79-3d0d-44e8-a1f4-bbe375e077c6/deploy-status)](https://app.netlify.com/projects/fredrickmandela/deploys)
 
-A Docker-ready and Netlify-ready portfolio website for Fredrick Mandela, focused on data engineering, analytics engineering, backend systems, and data platform leadership.
+A Docker-ready and Netlify-ready portfolio website for Fredrick Mandela, focused on data platforms, backend systems, analytics products, full-stack applications, and technical leadership.
 
 The site is built with Next.js, TypeScript, Tailwind CSS, and reusable React components. It is designed to work as an expanded professional profile, not just a static resume. The goal is to showcase experience, case studies, technical strengths, role positioning, and contact information in a clean and recruiter-friendly format.
 
@@ -17,7 +17,7 @@ This portfolio is intended to support job applications and interview conversatio
 - Data Engineering Lead
 - Engineering Team Lead
 
-The site expands the resume by adding more context around selected projects, technical ownership, leadership scope, tools used, and impact.
+The site expands the resume with case studies, technical ownership, leadership scope, and selected products. The featured project is [Investar Companion](https://github.com/fmandela/investar-companion), a financial-data platform for collecting, normalizing, and comparing Kenyan unit-trust rates.
 
 ## Tech Stack
 

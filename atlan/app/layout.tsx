@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 	},
 
 	description:
-		"Fredrick Mandela is a senior data and software engineering professional based in Nairobi, Kenya, with experience across data platforms, backend systems, full-stack applications, analytics engineering, APIs, cloud deployments, Python, SQL, Snowflake, Airflow, dbt, Node.js, React, and C#/.NET.",
+		"Fredrick Mandela is a senior data and full-stack engineer based in Nairobi, Kenya, building reliable data platforms, backend systems, analytics products, and production-ready applications.",
 
 	keywords: [
 		"Fredrick Mandela",
@@ -30,6 +30,9 @@ export const metadata: Metadata = {
 		"Full-Stack Development",
 		"Backend Systems",
 		"Data Platforms",
+		"Financial Data Engineering",
+		"Unit Trusts",
+		"Web Scraping",
 		"Snowflake",
 		"Airflow",
 		"dbt",
@@ -50,7 +53,7 @@ export const metadata: Metadata = {
 	openGraph: {
 		title: "Fredrick Mandela | Senior Data & Full-Stack Engineer",
 		description:
-			"Portfolio of Fredrick Mandela, focused on data platforms, backend systems, full-stack applications, analytics engineering, and data quality.",
+			"Fredrick Mandela builds reliable data platforms, backend systems, analytics products, and full-stack applications.",
 		url: profile.website,
 		siteName: "Fredrick Mandela Portfolio",
 		locale: "en_KE",
@@ -61,7 +64,7 @@ export const metadata: Metadata = {
 		card: "summary_large_image",
 		title: "Fredrick Mandela | Senior Data & Full-Stack Engineer",
 		description:
-			"Data platforms, backend systems, full-stack applications, analytics engineering, and data quality portfolio.",
+			"Senior data and full-stack engineer building reliable data platforms, backend systems, analytics products, and full-stack applications.",
 	},
 
 	alternates: {

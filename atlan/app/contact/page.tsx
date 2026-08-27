@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, Linkedin, Mail, MapPin } from "lucide-react";
+import { ArrowRight, Github, Linkedin, Mail, MapPin } from "lucide-react";
 import type { Metadata } from "next";
 import { SectionHeader } from "@/components/SectionHeader";
 import { profile } from "@/lib/profile";
@@ -24,7 +24,7 @@ export default function ContactPage() {
 			<SectionHeader
 				eyebrow="Contact"
 				title="Let’s connect"
-				description="Open to data engineering, analytics engineering, backend engineering, and data platform leadership roles."
+				description="Open to senior data engineering, backend and full-stack development, data-platform, analytics engineering, and technical leadership opportunities."
 			/>
 
 			<div className="mt-10 grid gap-8 lg:grid-cols-[1fr_340px]">
@@ -73,6 +73,28 @@ export default function ContactPage() {
 									<p className="font-semibold text-slate-950">LinkedIn</p>
 									<p className="mt-1 text-sm text-slate-600">
 										{profile.linkedin}
+									</p>
+								</div>
+							</div>
+
+							<ArrowRight className="h-5 w-5 text-slate-400 transition group-hover:translate-x-1 group-hover:text-slate-700" />
+						</Link>
+
+						<Link
+							href={profile.github}
+							target="_blank"
+							rel="noreferrer"
+							className="group flex items-center justify-between rounded-2xl border border-border bg-white p-5 transition hover:border-slate-300 hover:bg-slate-50"
+						>
+							<div className="flex items-center gap-4">
+								<div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-slate-100">
+									<Github className="h-5 w-5 text-slate-700" />
+								</div>
+
+								<div>
+									<p className="font-semibold text-slate-950">GitHub</p>
+									<p className="mt-1 text-sm text-slate-600">
+										github.com/fmandela
 									</p>
 								</div>
 							</div>

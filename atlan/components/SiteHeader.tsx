@@ -5,6 +5,7 @@ import { profile } from '@/lib/profile';
 const nav = [
   { href: '/experience', label: 'Experience' },
   { href: '/case-studies', label: 'Case Studies' },
+  { href: '/projects', label: 'Projects' },
   { href: '/skills', label: 'Skills' },
   { href: '/resume', label: 'Resume' },
   { href: '/contact', label: 'Contact' },

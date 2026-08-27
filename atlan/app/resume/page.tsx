@@ -50,7 +50,7 @@ const rolePositions = [
 ];
 
 const resumeHighlights = [
-	"6+ years building data platforms, pipelines, analytics systems, and backend data products.",
+	"8+ years building data platforms, pipelines, analytics systems, and backend data products.",
 	"Led data engineering work across multi-country operational environments.",
 	"Managed and mentored data engineers while remaining hands-on technically.",
 	"Strong experience with Python, SQL, Snowflake, Airflow, dbt, Dataiku, Soda, Superset, Power BI, APIs, and Docker.",
@@ -185,10 +185,9 @@ export default function ResumePage() {
 						<h3 className="font-semibold">Current positioning</h3>
 
 						<p className="mt-4 text-sm leading-7 text-slate-300">
-							Data Engineering Manager and Data Platform Lead with experience
-							building scalable pipelines, warehouses, analytics platforms, data
-							quality systems, and backend data workflows across multi-country
-							operational environments.
+							Senior Data & Full-Stack Engineer with experience building scalable
+							pipelines, warehouses, analytics products, quality systems, backend
+							services, and applications across multi-country operational environments.
 						</p>
 					</div>
 

@@ -1,4 +1,4 @@
-import { CaseStudyDetail } from "@/components/CaseStudyDetail";
+import { CaseStudyDetail } from "../../../components/CaseStudyDetail";
 
 export default function Page() {
 	return (

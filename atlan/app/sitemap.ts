@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		"/case-studies/data-platform-modernization",
 		"/case-studies/data-quality-observability",
 		"/case-studies/kenya-data-migration",
+		"/projects",
 		"/skills",
 		"/resume",
 		"/contact",
