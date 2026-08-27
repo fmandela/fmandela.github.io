@@ -6,7 +6,7 @@
   NPM_VERSION = "10"
 
 [dev]
-  command = "npm run dev"
+  command = "npm run start"
   port = 3000
   targetPort = 3000
   framework = "next"
